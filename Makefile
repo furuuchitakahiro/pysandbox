@@ -28,5 +28,5 @@ rm_git: ## pysandbox の .git を削除
 	-rm -rf .git
 	-rm ./src/.gitkeep
 
-copy_packages: ## エディタ補完用に .site-packages ディレクトリにパッケージをコピー ( エディタ補完の設定は各自頑張ってください )
+copy_packages: ## エディタ補完用に .site-packages ディレクトリにパッケージをコピー ( Python バージョンにご注意ください V オプションで指定できます )
 	$(BASE_CMD) sh -c "$(PIP_INSTALLS_CMD) && rm -rf $(LOCAL_PACKAGES_DIR) | mkdir $(LOCAL_PACKAGES_DIR) | cp -r /usr/local/lib/python$(V)/site-packages/* $(LOCAL_PACKAGES_DIR)"
