@@ -32,7 +32,7 @@ pysandbox とは **Docker** と **make** を用いた Python 環境です。
 
 あとはご自由に src ディレクトリにコードを書いて実行してください。
 
-# 機能
+## 機能
 
 - Python 環境仕様後にコンテナごと削除 ( あなたのコードは削除されません )
 - `pip install -r requirements.txt` は環境構築時にしているのでわざわざコマンドを実行しなくて良い
@@ -41,20 +41,20 @@ pysandbox とは **Docker** と **make** を用いた Python 環境です。
 
 ## Q & A
 
-## 用意される環境の Python バージョンは ?
+### 用意される環境の Python バージョンは ?
 
 3.6 です。
 
-## Python バージョンを 3.7 でやりたいんだけど
+### Python バージョンを 3.7 でやりたいんだけど
 
 `make start V=3.7`
 
 **V** オプションにバージョンを指定すれば 3.5 でも指定できます。
 
-## パッケージ管理は ? ( requirements.txt )
+### パッケージ管理は ? ( requirements.txt )
 
 `pip freeze > ~/requirements.txt`
 
-## 他の make コマンドは ?
+### 他の make コマンドは ?
 
 `make help`
