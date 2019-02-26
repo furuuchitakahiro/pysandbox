@@ -52,3 +52,7 @@ pysandbox とは **Docker** と **make** を用いた Python 環境です。
 ## パッケージ管理は ? ( requirements.txt )
 
 `pip freeze > ~/requirements.txt`
+
+## 他の make コマンドは ?
+
+`make help`
